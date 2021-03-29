@@ -743,45 +743,6 @@ def main():
                             currently_hovered_button != currently_clicked_button:
                             currently_hovered_button.unhover()
                             currently_hovered_button = None
-                        
-            # # mouse left click
-            # if pygame.mouse.get_pressed()[0]:
-            #     cell = get_clicked_cell(grid)
-            #     # first clicked cell is start, second clicked is end, further 
-            #     #   clicks are barriers
-            #     if not start and cell != end:
-            #         start = cell
-            #         start.make_start()
-            #     elif not end and cell != start:
-            #         end = cell
-            #         end.make_end()
-            #     elif cell != end and cell != start:
-            #         cell.make_barrier()
-            # # mouse right click
-            # elif pygame.mouse.get_pressed()[2]:
-            #     cell = get_clicked_cell(grid)
-            #     cell.reset()
-            #     if cell == start:
-            #         start = None
-            #     elif cell == end:
-            #         end = None
-            # if event.type == pygame.KEYDOWN:
-            #     if event.key == pygame.K_SPACE and start and end:
-            #         for row in grid:
-            #             for cell in row:
-            #                 cell.set_neighbors(grid)
-            #         # Resetting the paren_dict to an empty dictionary before
-            #         #   each invocation of the specific algorithm.
-            #         parent_dict = {}
-            #         if astar_graphsearch.search(lambda: redraw(grid), grid, \
-            #                                     start, end, parent_dict):
-            #             paint_solution_path(parent_dict, end, lambda: redraw(grid))
-            #     if event.key == pygame.K_r:
-            #         start = None
-            #         end = None
-            #         # actual visible reset happens in next iteration of the 
-            #         #   current while loop when draw(...) is invoked, see above.
-            #         grid = make_grid()
 
     pygame.quit()   
 
