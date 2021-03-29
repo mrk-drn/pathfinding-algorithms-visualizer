@@ -16,7 +16,7 @@ It can be easily seen that this heuristic satisfies the following triangle inequ
 "consistent" which is the requirement for A*-Graph-Search to be optimal, i.e., to always find the 
 shortest solution path (if a solution path exists):
 
-			> heuristic(cell) <= costs(cell, cell') + heuristic(cell'),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heuristic(cell) <= costs(cell, cell') + heuristic(cell'),
 			
 where cell' is a neighbour of cell and costs(cell, cell') are the costs to get from cell to cell' (which is 
 always 1).
