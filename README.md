@@ -8,12 +8,16 @@ All algorithms are implemented as Graph Search, i.e., already visited spots will
 * Uniform-Cost-Search (Dijkstra)
 
 ## Informed (using heuristics) search algorithms:
-* Greed-Best-First-Search
+* Greedy-Best-First-Search
 * A*-Search
+
 The heuristic used here is the L-shape distance, i.e., abs(x_cell - x_goal) + abs(y_cell - y_goal).
-It can be easily seen that this heuristic satisfies the triangle inequality which is the requirement for 
-A*-Graph-Search to be optimal, i.e., to always find the shortest solution path (if a solution path exists):
-			heuristic(cell) <= costs(cell, cell') + heuristic(cell'),
+It can be easily seen that this heuristic satisfies the following triangle inequality and is thus 
+"consistent" which is the requirement for A*-Graph-Search to be optimal, i.e., to always find the 
+shortest solution path (if a solution path exists):
+
+			> heuristic(cell) <= costs(cell, cell') + heuristic(cell'),
+			
 where cell' is a neighbour of cell and costs(cell, cell') are the costs to get from cell to cell' (which is 
 always 1).
 
