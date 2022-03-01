@@ -3,7 +3,7 @@
 All algorithms are implemented as Graph Search, i.e., already visited spots will not be considered again.
 
 ## Uninformed (using no heuristics) search algorithms:
-* Breadth-First-Serch
+* Breadth-First-Search
 * Depth-First-Search
 * Uniform-Cost-Search (Dijkstra)
 
