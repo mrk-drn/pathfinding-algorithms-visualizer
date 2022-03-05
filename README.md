@@ -1,6 +1,6 @@
 # Pathfinding Algorithms Visualizer
 
-All algorithms are implemented as Graph Search, i.e., already visited spots will not be considered again.
+A gamified visualization of common search algorithms. All algorithms are implemented as Graph Search, i.e., already visited spots will not be considered again.
 
 ## Uninformed (using no heuristics) search algorithms:
 * [Breadth-First-Search](https://github.com/mrk-drn/pathfinding-algorithms-visualizer/blob/master/breadth_first_graphsearch.py)
